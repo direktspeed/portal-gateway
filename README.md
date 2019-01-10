@@ -5,10 +5,21 @@ A Portal lib for multible Gateways that can Translate between Multiple Protocols
 https://www.w3.org/TR/webrtc/#call-flow-browser-to-browser
 
 
-- WebRTC
+- RTC
+  - WebRTC [W3C WebRTC API][w3c-webrtc] and [[draft-ietf-rtcweb-jsep-24]][jsep]
   - Session Description Protocol (SDP)
-  - [Object] Real-Time Communications ([O]RTC),
-  - Interactive Connectivity Establishment (ICE)
+  - [Object] RealTime Communication ([O]RTC), [w3c-ortc] and [W3C CG ORTC API]
+  - Interactive Connectivity Establishment (ICE) [[draft-ietf-ice-rfc-5245bis-08]][ice]
+    - Trickle ICE [[draft-ietf-ice-trickle-07]][trickle-ice]
+  - STUN [[RFC 5389]][stun]
+    - DTLS over UDP [[RFC 7350]][stun-turn-dtls]
+  - TURN [[RFC 5766]][turn]
+  - IP Address Handling [[draft-ietf-rtcweb-ip-handling-03]][ip-handling]
+  - DNS-based STUN/TURN server discovery
+  - Data Channel
+    - DCEP [[draft-ietf-rtcweb-data-protocol-09]][dcep]
+    - SCTP-based [[draft-ietf-rtcweb-data-channel-13]][sctp-dc]
+    - WebSockets
   - Session Border Controller (SBC).
     - Security
     - NAT traversal
@@ -24,11 +35,11 @@ Network Address Translation (NAT) gives private IP addresses access to the Inter
 A Symmetric NAT not only translates the IP address from private to public (and vice versa), it also translates ports. There are various rules as to how that translation and mapping occurs, but it’s safe to say that with symmetric NAT, you should never expect that the IP address/port of the source is what the destination will see.
 
 
-## ICE
+## ICE Interactive Connectivity Establishment
 
 It’s ICE’s job to find the best path to connect peers. It may be able to do that with a direct connection between the clients, but it also works for clients where a direct connection is not possible (i.e. behind NATs).
 
-In the case of asymmetric NAT, ICE will use a STUN (Session Traversal Utilities for NAT) server. A STUN server allows clients to discover their public IP address and the type of NAT they are behind. This information is used to establish the media connection. The STUN protocol is defined in RFC 3489.
+In the case of asymmetric NAT, ICE will use a STUN (Session Traversal Utilities for NAT) server. A STUN server allows clients to discover their public IP address and the type of NAT they are behind. This information is used to establish the connection. The STUN protocol is defined in RFC 3489.
 
 In most cases, a STUN server is only used during the connection setup and once that session has been established, media will flow directly between clients.
 
@@ -39,13 +50,8 @@ Unlike STUN, a TURN server remains in the media path after the connection has be
 
 # Features
 Supports the following High and Low Level Protocols including the TLS(succesor of SSL) Secure Counter Parts
-* ICE [[draft-ietf-ice-rfc-5245bis-08]][ice]
-  - [x] Trickle ICE [[draft-ietf-ice-trickle-07]][trickle-ice]
-  - [x] IPv4
-  - [x] IPv6
-  - [x] UDP
-  - [ ] TCP
-* STUN [[RFC 5389]][stun]
+
+* 
   - [x] UDP
   - [ ] TCP
   - [ ] TLS over TCP
@@ -61,7 +67,7 @@ Supports the following High and Low Level Protocols including the TLS(succesor o
 * API
   - [x] WebRTC C-API, JS-API based on the [W3C WebRTC API][w3c-webrtc] and
     [[draft-ietf-rtcweb-jsep-24]][jsep]
-  - [x] ORTC C-API based on the [W3C CG ORTC API][w3c-ortc]
+  - [x] ORTC C-API based on the [W3C CG ORTC API]
 * Other
   - [ ] IP Address Handling [[draft-ietf-rtcweb-ip-handling-03]][ip-handling]
   - [ ] DNS-based STUN/TURN server discovery
