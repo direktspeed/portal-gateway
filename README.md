@@ -39,6 +39,32 @@ Unlike STUN, a TURN server remains in the media path after the connection has be
 
 # Features
 Supports the following High and Low Level Protocols including the TLS(succesor of SSL) Secure Counter Parts
+* ICE [[draft-ietf-ice-rfc-5245bis-08]][ice]
+  - [x] Trickle ICE [[draft-ietf-ice-trickle-07]][trickle-ice]
+  - [x] IPv4
+  - [x] IPv6
+  - [x] UDP
+  - [ ] TCP
+* STUN [[RFC 5389]][stun]
+  - [x] UDP
+  - [ ] TCP
+  - [ ] TLS over TCP
+  - [ ] DTLS over UDP [[RFC 7350]][stun-turn-dtls]
+* TURN [[RFC 5766]][turn]
+  - [ ] UDP
+  - [ ] TCP
+  - [ ] TLS over TCP
+  - [ ] DTLS over UDP [[RFC 7350]][stun-turn-dtls]
+* Data Channel
+  - [x] DCEP [[draft-ietf-rtcweb-data-protocol-09]][dcep]
+  - [x] SCTP-based [[draft-ietf-rtcweb-data-channel-13]][sctp-dc]
+* API
+  - [x] WebRTC C-API, JS-API based on the [W3C WebRTC API][w3c-webrtc] and
+    [[draft-ietf-rtcweb-jsep-24]][jsep]
+  - [x] ORTC C-API based on the [W3C CG ORTC API][w3c-ortc]
+* Other
+  - [ ] IP Address Handling [[draft-ietf-rtcweb-ip-handling-03]][ip-handling]
+  - [ ] DNS-based STUN/TURN server discovery
 - WebTorrent (WebRTC)
 - WS(S) WebSockets (TCP)
 - Torrent (TCP)
