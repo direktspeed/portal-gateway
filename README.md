@@ -43,7 +43,7 @@ Supports the following High and Low Level Protocols including the TLS(succesor o
 - Data Channel
   - DCEP [[draft-ietf-rtcweb-data-protocol-09]][dcep]
   - SCTP-based [[draft-ietf-rtcweb-data-channel-13]][sctp-dc]
-  - WebSockets
+  - WebSockets [[RFC 6455]][ws]
 - Session Border Controller (SBC).
   - Security
   - NAT traversal
@@ -144,3 +144,4 @@ Disadvantages of routing architecture
 [w3c-ortc]: http://draft.ortc.org
 [webrtc-sdp]: https://tools.ietf.org/html/draft-ietf-rtcweb-sdp-04
 [ip-handling]: https://tools.ietf.org/html/draft-ietf-rtcweb-ip-handling-03
+[ws]: https://tools.ietf.org/html/rfc6455
