@@ -8,7 +8,7 @@ https://www.w3.org/TR/webrtc/#call-flow-browser-to-browser
 - RTC
   - WebRTC [W3C WebRTC API][w3c-webrtc] and [[draft-ietf-rtcweb-jsep-24]][jsep]
   - Session Description Protocol (SDP)
-  - [Object] RealTime Communication ([O]RTC), [w3c-ortc] and [W3C CG ORTC API]
+  - [Object] RealTime Communication ([O]RTC), [w3c-ortc]
   - Interactive Connectivity Establishment (ICE) [[draft-ietf-ice-rfc-5245bis-08]][ice]
     - Trickle ICE [[draft-ietf-ice-trickle-07]][trickle-ice]
   - STUN [[RFC 5389]][stun]
@@ -146,6 +146,12 @@ Disadvantages of routing architecture
 
     Requires backend routing server, though less expensive than a mixing solution
     Can be tricky to implement
+   
+   
+# Infrastructure
+- https://github.com/rawrtc/rawrtc
+-
+
 
 
 [ice]: https://tools.ietf.org/html/draft-ietf-ice-rfc5245bis-08
