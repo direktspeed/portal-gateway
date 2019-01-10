@@ -3,28 +3,6 @@ A Portal lib for multible Gateways that can Translate between Multiple Protocols
 
 
 https://www.w3.org/TR/webrtc/#call-flow-browser-to-browser
-
-
-- RTC
-  - WebRTC [W3C WebRTC API][w3c-webrtc] and [[draft-ietf-rtcweb-jsep-24]][jsep]
-  - Session Description Protocol (SDP)
-  - [Object] RealTime Communication ([O]RTC), [w3c-ortc]
-  - Interactive Connectivity Establishment (ICE) [[draft-ietf-ice-rfc-5245bis-08]][ice]
-    - Trickle ICE [[draft-ietf-ice-trickle-07]][trickle-ice]
-  - STUN [[RFC 5389]][stun]
-    - DTLS over UDP [[RFC 7350]][stun-turn-dtls]
-  - TURN [[RFC 5766]][turn]
-  - IP Address Handling [[draft-ietf-rtcweb-ip-handling-03]][ip-handling]
-  - DNS-based STUN/TURN server discovery
-  - Data Channel
-    - DCEP [[draft-ietf-rtcweb-data-protocol-09]][dcep]
-    - SCTP-based [[draft-ietf-rtcweb-data-channel-13]][sctp-dc]
-    - WebSockets
-  - Session Border Controller (SBC).
-    - Security
-    - NAT traversal
-    - Interoperability
-    - Policy enforcement  
   
 A Public IP Address is an IP address that is globally unique across the Internet. Only one device may be in possession of a public IP address.
 
@@ -51,26 +29,26 @@ Unlike STUN, a TURN server remains in the media path after the connection has be
 # Features
 Supports the following High and Low Level Protocols including the TLS(succesor of SSL) Secure Counter Parts
 
-* 
-  - [x] UDP
-  - [ ] TCP
-  - [ ] TLS over TCP
-  - [ ] DTLS over UDP [[RFC 7350]][stun-turn-dtls]
-* TURN [[RFC 5766]][turn]
-  - [ ] UDP
-  - [ ] TCP
-  - [ ] TLS over TCP
-  - [ ] DTLS over UDP [[RFC 7350]][stun-turn-dtls]
-* Data Channel
-  - [x] DCEP [[draft-ietf-rtcweb-data-protocol-09]][dcep]
-  - [x] SCTP-based [[draft-ietf-rtcweb-data-channel-13]][sctp-dc]
-* API
-  - [x] WebRTC C-API, JS-API based on the [W3C WebRTC API][w3c-webrtc] and
-    [[draft-ietf-rtcweb-jsep-24]][jsep]
-  - [x] ORTC C-API based on the [W3C CG ORTC API]
-* Other
-  - [ ] IP Address Handling [[draft-ietf-rtcweb-ip-handling-03]][ip-handling]
-  - [ ] DNS-based STUN/TURN server discovery
+- rawRTC
+- WebRTC [W3C WebRTC API][w3c-webrtc] and [[draft-ietf-rtcweb-jsep-24]][jsep]
+- Session Description Protocol (SDP)
+- [Object] RealTime Communication ([O]RTC), [w3c-ortc]
+- Interactive Connectivity Establishment (ICE) [[draft-ietf-ice-rfc-5245bis-08]][ice]
+  - Trickle ICE [[draft-ietf-ice-trickle-07]][trickle-ice]
+- STUN [[RFC 5389]][stun]
+  - DTLS over UDP [[RFC 7350]][stun-turn-dtls]
+- TURN [[RFC 5766]][turn]
+- IP Address Handling [[draft-ietf-rtcweb-ip-handling-03]][ip-handling]
+- DNS-based STUN/TURN server discovery
+- Data Channel
+  - DCEP [[draft-ietf-rtcweb-data-protocol-09]][dcep]
+  - SCTP-based [[draft-ietf-rtcweb-data-channel-13]][sctp-dc]
+  - WebSockets
+- Session Border Controller (SBC).
+  - Security
+  - NAT traversal
+  - Interoperability
+  - Policy enforcement  
 - WebTorrent (WebRTC)
 - WS(S) WebSockets (TCP)
 - Torrent (TCP)
