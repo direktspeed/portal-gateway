@@ -141,3 +141,16 @@ Disadvantages of routing architecture
     Requires backend routing server, though less expensive than a mixing solution
     Can be tricky to implement
 
+
+[ice]: https://tools.ietf.org/html/draft-ietf-ice-rfc5245bis-08
+[trickle-ice]: https://tools.ietf.org/html/draft-ietf-ice-trickle-07
+[stun]: https://tools.ietf.org/html/rfc5389
+[turn]: https://tools.ietf.org/html/rfc5766
+[stun-turn-dtls]: https://tools.ietf.org/html/rfc7350
+[dcep]: https://tools.ietf.org/html/draft-ietf-rtcweb-data-protocol-09
+[sctp-dc]: https://tools.ietf.org/html/draft-ietf-rtcweb-data-channel-13
+[jsep]: https://tools.ietf.org/html/draft-ietf-rtcweb-jsep-19
+[w3c-webrtc]: https://www.w3.org/TR/webrtc/
+[w3c-ortc]: http://draft.ortc.org
+[sdp]: https://tools.ietf.org/html/draft-ietf-rtcweb-sdp-04
+[ip-handling]: https://tools.ietf.org/html/draft-ietf-rtcweb-ip-handling-03
