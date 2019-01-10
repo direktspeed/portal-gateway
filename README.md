@@ -31,7 +31,7 @@ Supports the following High and Low Level Protocols including the TLS(succesor o
 
 - rawRTC
 - WebRTC [W3C WebRTC API][w3c-webrtc] and [[draft-ietf-rtcweb-jsep-24]][jsep]
-- Session Description Protocol (SDP) [[SDP]][sdp]
+- Session Description Protocol (SDP) [[RFC_4566]][sdp] and [[draft-ietf-rtcweb-sdp-04]][webrtc-sdp]
 - [Object] RealTime Communication ([O]RTC), [w3c-ortc]
 - Interactive Connectivity Establishment (ICE) [[draft-ietf-ice-rfc-5245bis-08]][ice]
   - Trickle ICE [[draft-ietf-ice-trickle-07]][trickle-ice]
@@ -142,5 +142,5 @@ Disadvantages of routing architecture
 [jsep]: https://tools.ietf.org/html/draft-ietf-rtcweb-jsep-19
 [w3c-webrtc]: https://www.w3.org/TR/webrtc/
 [w3c-ortc]: http://draft.ortc.org
-[sdp]: https://tools.ietf.org/html/draft-ietf-rtcweb-sdp-04
+[webrtc-sdp]: https://tools.ietf.org/html/draft-ietf-rtcweb-sdp-04
 [ip-handling]: https://tools.ietf.org/html/draft-ietf-rtcweb-ip-handling-03
