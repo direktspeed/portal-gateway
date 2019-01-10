@@ -1,5 +1,5 @@
 # portal-gateway Multi Point Architecture Lib written in JavaScript
-A Portal lib for multible Gateways that can Translate between Multiple Protocols used by webtorrent, couchbase-node-gateway, couchbase-fs a multi Protocol Translation Layers
+A Portal lib for multible Gateways that can Translate between Multiple Protocols and Transport Layers used by webtorrent, couchbase-node-gateway, couchbase-fs a multi Protocol Translation Layers
 
 
 https://www.w3.org/TR/webrtc/#call-flow-browser-to-browser
