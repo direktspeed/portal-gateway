@@ -7,7 +7,7 @@ https://www.w3.org/TR/webrtc/#call-flow-browser-to-browser
 
 - WebRTC
   - Session Description Protocol (SDP)
-  - [Object] Real-Time Communications Object RTC ([O]RTC),
+  - [Object] Real-Time Communications ([O]RTC),
   - Interactive Connectivity Establishment (ICE)
   - Session Border Controller (SBC).
     - Security
