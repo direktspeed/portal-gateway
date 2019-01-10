@@ -1,6 +1,42 @@
 # portal-gateway Multi Point Architecture Lib written in JavaScript
 A Portal lib for multible Gateways that can Translate between Multiple Protocols used by webtorrent, couchbase-node-gateway, couchbase-fs a multi Protocol Translation Layers
 
+
+https://www.w3.org/TR/webrtc/#call-flow-browser-to-browser
+
+
+- WebRTC
+  - Session Description Protocol (SDP)
+  - [Object] Real-Time Communications Object RTC ([O]RTC),
+  - Interactive Connectivity Establishment (ICE)
+  - Session Border Controller (SBC).
+    - Security
+    - NAT traversal
+    - Interoperability
+    - Policy enforcement  
+  
+A Public IP Address is an IP address that is globally unique across the Internet. Only one device may be in possession of a public IP address.
+
+A Private IP Address is an IP address that is not globally unique and may exist simultaneously on many different devices. A private IP address is never directly connected to the Internet. Devices that possesses a private IP address will be in their own unique IP space (e.g. different companies or domains, networks). 
+
+Network Address Translation (NAT) gives private IP addresses access to the Internet. NAT allows a single devices, such as a router, to act as an agent between the Internet (populated with public IP addresses) and a private network (populated with private IP addresses). A NAT device can use a single public IP address to represent many private IP addresses.
+
+A Symmetric NAT not only translates the IP address from private to public (and vice versa), it also translates ports. There are various rules as to how that translation and mapping occurs, but it’s safe to say that with symmetric NAT, you should never expect that the IP address/port of the source is what the destination will see.
+
+
+## ICE
+
+It’s ICE’s job to find the best path to connect peers. It may be able to do that with a direct connection between the clients, but it also works for clients where a direct connection is not possible (i.e. behind NATs).
+
+In the case of asymmetric NAT, ICE will use a STUN (Session Traversal Utilities for NAT) server. A STUN server allows clients to discover their public IP address and the type of NAT they are behind. This information is used to establish the media connection. The STUN protocol is defined in RFC 3489.
+
+In most cases, a STUN server is only used during the connection setup and once that session has been established, media will flow directly between clients.
+
+If a STUN server cannot establish the connection, ICE can turn to TURN (pardon the pun). Traversal Using Relay NAT (TURN) is an extension to STUN that allows media traversal over a NAT that does not do the “consistent hole punch” required by STUN traffic. TURN servers are often used in the case of a symmetric NAT.
+
+Unlike STUN, a TURN server remains in the media path after the connection has been established. That is why the term “relay” is used to define TURN. A TURN server literally relays the media between the peers.
+
+
 # Features
 Supports the following High and Low Level Protocols including the TLS(succesor of SSL) Secure Counter Parts
 - WebTorrent (WebRTC)
