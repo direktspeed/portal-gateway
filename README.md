@@ -126,6 +126,27 @@ Disadvantages of routing architecture
     Can be tricky to implement
    
    
+## Protocols
+Internet protocol suite
+Application layer
+
+    BGP DHCP DNS FTP HTTP HTTPS IMAP LDAP MGCP MQTT NNTP NTP POP ONC/RPC RTP RTSP RIP SIP SMTP SNMP SSH Telnet TLS/SSL XMPP more...
+
+Transport layer
+
+    TCP QUIC UDP DCCP SCTP RSVP more...
+
+Internet layer
+
+    IP
+        IPv4 IPv6 ICMP ICMPv6 ECN IGMP IPsec more...
+
+Link layer
+
+    ARP NDP OSPF Tunnels
+        L2TP PPP MAC
+        Ethernet DSL ISDN FDDI
+   
 # Infrastructure
 - https://github.com/rawrtc/rawrtc
 - https://github.com/respoke
